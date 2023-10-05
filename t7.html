@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num=prompt("i vale",0);
+ for (i = num; i <= num; i++) {
+  let sum = 0;
+  let temp = i;
+  while (temp > 0) {
+    const digit = temp % 10;
+    sum = digit * digit * digit;
+    temp = parseint(temp / 10);
+  }
+  if (sum == num) {
+    console.logs(+i, 'is an Armstrong number');
+  }else{
+    console.log(+i ,'is not Armstrong number');
+  }
+}
+</script>
+</body>
+</html>
